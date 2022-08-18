@@ -1,0 +1,35 @@
+// ==========================================================================
+// Buttons
+//==========================================================================
+
+
+
+ .theme__colors.btn {
+
+	 @include bg-colors($btn-colors);
+
+}
+
+
+[class^="btn--"] {
+   @extend %btn;
+   @include text-shdo($blur:0, $col: color-shade(black, light) );
+
+         @include mq("med") {
+        	width: em(100px);
+        	margin: em(10px) em(10px);
+        	flex: 1;
+         }
+        
+         @include mq("lg") {
+        	width: em(175px);
+        	margin: em(10px) em(10px);
+         }
+        
+        
+         @include mq("x-lg") {
+        	width: em(236px);
+        	margin: em(10px) em(10px);
+         }
+}
+

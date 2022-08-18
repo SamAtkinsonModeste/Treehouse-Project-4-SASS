@@ -1,0 +1,83 @@
+//=======================================
+//IMAGES
+//======================================
+
+
+.img {
+
+	@include m(logo) {
+		@extend %img;
+		@extend %marg-cen;
+
+		@include mq("lg") {
+
+			width: em(175px);
+			height: em(83px);
+			margin-top: em(18px);
+
+		}
+
+
+		@include mq("x-lg") {
+
+			width: em(195px);
+			height: em(113px);
+			margin-top: em(8px);
+
+		}
+
+	}
+
+	@include m(avatar) {
+		@extend %img;
+		@include br-default($colu: rgba($lipstick, 0.3));
+		border-radius: 100%;
+		margin-bottom: em(30px);
+		@include box-shdo($col: rgba($lipstick, 0.3));
+
+		@include mq("med") {
+			height: em(200px);
+			width: em(200px);
+
+		}
+
+		@include mq("lg") {
+			height: em(250px);
+			width: em(250px);
+
+		}
+
+
+		@include mq("x-lg") {
+			height: em(300px);
+			width: em(300px);
+
+		}
+	}
+
+	@include m(frame) {
+		@extend %img;
+		@include br-default($colu: rgba($lipstick, 0.3));
+		@include box-shdo($col: rgba($lipstick, 0.3));
+		border-radius: $br-rad;
+
+
+		@include mq("med") {
+			height: em(200px);
+			width: em(400px);
+
+		}
+
+		@include mq("lg") {
+			height: em(250px);
+			width: em(450px);
+
+		}
+
+		@include mq("x-lg") {
+			height: em(300px);
+			width: em(500px);
+
+		}
+	}
+}
