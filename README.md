@@ -1,4 +1,4 @@
-# ![](img/treehouse.png) Team Treehouse - Project 4 - Web Style Guide
+# ![](img/treehouse.png) Team Treehouse - Web Style Guide
 This is my fourth  project for the [Front End Web Development Techdegree at Treehouse](https://teamtreehouse.com/techdegree/front-end-web-development).
 
 ### Description
@@ -36,8 +36,6 @@ Users should be able to :
 
 
 ## My Process
-First, I read through all the requirements for this project.
-Then started with the *global variables partial* and then the rest of the *untilities partials, functions, extends and mixins*.
 
 ### Technology Used
 - Sass
